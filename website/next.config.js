@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   // basePath: 'https://Sezhian-7.github.io/websitehost/',
-  basePath: '/websitehost/',
-  assetPrefix: '/websitehost/',
+  basePath: '/websitehost',
+  assetPrefix: '/styles',
 
   swcMinify: true,
   images: {
