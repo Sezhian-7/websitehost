@@ -3,7 +3,8 @@ import react, { useEffect, useState } from "react";
 
 import "../styles/theme.css";
 import "../styles/TailwindUtlis.css";
-import "../styles/globals.css";
+// import "../styles/globals.css";
+import "websitehost/styles/globals.css";
 import "../styles/TailwindUtlis.css";
 import "../component/styles/ComponentStyle.css";
 import { useRouter } from "next/router";
