@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 // import Accordion from '../../component/accordion/Accordion';
-import { Herocard } from '../../component/card/herocard/Herocard';
-import Img2 from '../../asset/image/svg/Heroimg2';
-import Arrow from '../../asset/image/svg/Arrow';
-import BG_SVG from '../../asset/image/svg/BG_SVG';
-import Uparrowimage from '../../asset/image/svg/Uparrowimage';
-import DownArrow from '../../asset/image/svg/DownArrow';
+import { Herocard } from '../../../component/card/herocard/Herocard';
+import Img2 from '../../../asset/image/svg/Heroimg2';
+import Arrow from '../../../asset/image/svg/Arrow';
+import BG_SVG from '../../../asset/image/svg/BG_SVG';
+import Uparrowimage from '../../../asset/image/svg/Uparrowimage';
+import DownArrow from '../../../asset/image/svg/DownArrow';
 import {
   Accordion,
   AccordionItem,
@@ -14,10 +14,10 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import Router from 'next/router';
-import { MailTo } from '../../component/MailTo';
-import DynamicHead from '../../component/head/DynamicHead';
+import { MailTo } from '../../../component/MailTo';
+import DynamicHead from '../../../component/head/DynamicHead';
 
-const Fullstackjob = () => {
+const Frontendjob = () => {
   const [showAccordion, setAccordion] = useState(false);
   const handleClickScroll = (e: any) => {
     const element = document.getElementById('accordion__heading-1');
@@ -28,8 +28,8 @@ const Fullstackjob = () => {
   return (
     <>
       <DynamicHead
-        title='Full Stack Developer'
-        description='We are looking for a Full Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment. As a Full Stack Developer, you should be comfortable around both front-end and back-end coding languages, development frameworks and third-party libraries. You should also be a team player with a knack for visual design and utility.'
+        title='Front End Developer'
+        description='We are looking for qualified Front-end developers with a minimum of 2 years experience to join our team. You will be responsible for building the ‘client-side’ of our web & mobile applications. You are required to work in teams alongside Back end Developers and User Experience Designers to ensure all elements of web creation are consistent. This requires excellent communication and interpersonal skills.'
       >
         <section className='main_section bg-gray-block develop_circle_background'>
           <div className='mv-container'>
@@ -43,7 +43,7 @@ const Fullstackjob = () => {
               </span>
             </div>
             <span className='multi_heading text_des mb-0'>
-              <h1 className='heading_story text_des mb-[45px]'>Full Stack </h1>
+              <h1 className='heading_story text_des mb-[45px]'>Front End</h1>
               <h1 className='heading_story text_des mb-[45px]'>Developer</h1>
             </span>
           </div>
@@ -61,74 +61,72 @@ const Fullstackjob = () => {
                     <div className='accordion_content'>
                       <h2>Job Description</h2>
                       <p className='mb-[20px]'>
-                        We are looking for a Full Stack Developer to produce
-                        scalable software solutions. You&apos;ll be part of a
-                        cross-functional team that&apos;s responsible for the
-                        entire software development life cycle, from conception
-                        to deployment.
+                        We are looking for qualified Front-end developers with a
+                        minimum two years of experience to join our team. You
+                        will be responsible for building the
+                        &apos;client-side&apos; of our web & mobile
+                        applications.
                       </p>
                       <p>
-                        As a Full Stack Developer, you should be comfortable
-                        around both front-end and back-end coding languages,
-                        development frameworks and third-party libraries. You
-                        should also be a team player with a knack for visual
-                        design and utility.
+                        You are required to work in teams alongside Back end
+                        Developers and User Experience Designers to ensure all
+                        elements of web creation are consistent. This requires
+                        excellent communication and interpersonal skills.
                       </p>
                     </div>
                     <div className='accordion_content'>
                       <h2>Responsibilities:</h2>
-                      {/* <p className='mb-5'>
-                      You will work alongside our Lead developer and collaborate
-                      with the team on all activities below.
-                    </p> */}
+                      <p className='mb-5'>
+                        You will work alongside our Lead developer and
+                        collaborate with the team on all activities below.
+                      </p>
                       <span>
                         <li>
-                          Design client-side and server-side architecture.
+                          Use markup languages like HTML to create user-friendly
+                          responsive web pages.
+                        </li>
+                        <li>Maintain and improve websites.</li>
+                        <li>Optimise applications for maximum speed.</li>
+                        <li>Design mobile-based features.</li>
+                        <li>
+                          Assure that all user input is validated before
+                          submitting to the back-end.
                         </li>
                         <li>
-                          Develop and manage well-functioning databases and
-                          applications.
-                        </li>
-                        <li>Write effective APIs.</li>
-                        <li>
-                          Ensuring cross-platform optimisation for mobile
-                          phones.
+                          Collaborate with back-end developers and web designers
+                          to improve usability.
                         </li>
                         <li>
-                          Work with development teams and product managers to
-                          ideate software solutions.
+                          Maintaining brand consistency throughout the design.
                         </li>
-                        <li>
-                          Test software to ensure responsiveness and efficiency.
-                        </li>
-                        <li>Troubleshoot, debug and upgrade software.</li>
-                        <li>Meeting both technical and consumer needs.</li>
                       </span>
                     </div>
                     <div className='accordion_content'>
                       <h2>Requirements:</h2>
                       <li>
-                        Proficiency with server-side languages such as Node js,
-                        PHP and .Net.
+                        Proficient understanding of web markup, including HTML5,
+                        CSS3.
                       </li>
                       <li>
-                        Proficiency with JavaScript frameworks such as Angular,
-                        Ionic, React js and React native.
+                        Basic understanding of server-side CSS pre-processing
+                        platforms, such as LESS and SASS.
                       </li>
                       <li>
-                        Proficiency with database technology such as MySQL,
-                        Oracle, Postgresql and Mongo DB.
+                        Proficient understanding of client-side scripting and
+                        JavaScript frameworks, including jQuery.
                       </li>
                       <li>
-                        Familiarity with fundamental front-end languages and
-                        libraries (e.g. HTML/ CSS, JavaScript, XML, jQuery).
+                        Good understanding of advanced JavaScript libraries and
+                        frameworks such as React.js, Bootstrap, Ionic, Node js,
+                        CMS Framework like Apostrophe, Wagtail, keystone.
                       </li>
+                      <li>Familiarity with browser testing and debugging.</li>
                       <li>
-                        Strong organisational and project management skills.
+                        In-depth understanding of the entire web development
+                        process (design, development and deployment).
                       </li>
-                      <li>Excellent verbal communication skills.</li>
-                      <li>Good problem-solving skills.</li>
-                      <li>Attention to detail.</li>
+                      <li>Excellent analytical and multitasking skills.</li>
+                      <li>Experience with responsive and adaptive design.</li>
                     </div>
                   </div>
                 </AccordionItemPanel>
@@ -208,4 +206,4 @@ const Fullstackjob = () => {
     </>
   );
 };
-export default Fullstackjob;
+export default Frontendjob;

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 // import Accordion from '../../component/accordion/Accordion';
-import { Herocard } from '../../component/card/herocard/Herocard';
-import Img2 from '../../asset/image/svg/Jobdes';
-import Arrow from '../../asset/image/svg/Arrow';
-import BG_SVG from '../../asset/image/svg/BG_SVG';
-import Uparrowimage from '../../asset/image/svg/Uparrowimage';
-import DownArrow from '../../asset/image/svg/DownArrow';
+import { Herocard } from '../../../component/card/herocard/Herocard';
+import Img2 from '../../../asset/image/svg/Heroimg2';
+import Arrow from '../../../asset/image/svg/Arrow';
+import BG_SVG from '../../../asset/image/svg/BG_SVG';
+import Uparrowimage from '../../../asset/image/svg/Uparrowimage';
+import DownArrow from '../../../asset/image/svg/DownArrow';
 import {
   Accordion,
   AccordionItem,
@@ -14,27 +14,25 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import Router from 'next/router';
-import { MailTo } from '../../component/MailTo';
-import DynamicHead from '../../component/head/DynamicHead';
+import { MailTo } from '../../../component/MailTo';
+import DynamicHead from '../../../component/head/DynamicHead';
 
-const Jobdescription = () => {
+const Devjob = () => {
   const [showAccordion, setAccordion] = useState(false);
-
   const handleClickScroll = (e: any) => {
     const element = document.getElementById('accordion__heading-1');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  // aria-expanded="true"
   return (
     <>
       <DynamicHead
-        title='Node JS Developer'
-        description='We are looking for a Node.js developer with a minimum of 2 year’s experience responsible for managing the interchange of data between the server.'
+        title='React JS
+Developer'
+        description='We are looking for a React.js developer with a minimum of 2 year’s experience responsible for managing the interchange of data between the server.'
       >
-        <section className='main_section bg-white-block develop_circle_background'>
+        <section className='main_section bg-gray-block develop_circle_background'>
           <div className='mv-container'>
             <div className='back_section'>
               <span
@@ -46,7 +44,7 @@ const Jobdescription = () => {
               </span>
             </div>
             <span className='multi_heading text_des mb-0'>
-              <h1 className='heading_story text_des mb-[45px]'>Node JS </h1>
+              <h1 className='heading_story text_des mb-[45px]'>React JS</h1>
               <h1 className='heading_story text_des mb-[45px]'>Developer</h1>
             </span>
           </div>
@@ -63,77 +61,66 @@ const Jobdescription = () => {
                   <div className='accordion_space_block mb-[20px]'>
                     <div className='accordion_content'>
                       <h2>Job Description</h2>
+                      <p className='mb-[20px]'>
+                        We are looking for a DevOps engineer who knows Docker
+                        inside and out with 4 - 7 years of experience. They will
+                        be responsible for defining and implementing our
+                        containerisation technology strategies. They will also
+                        design our architecture and define our roadmap. In
+                        addition, the candidate will work on building, scaling,
+                        and monitoring various highly complex applications and
+                        making our container orchestration cluster highly
+                        available.
+                      </p>
                       <p>
-                        Mediwave Digital is looking for a Node.js Developer with
-                        a minimum of two years of experience responsible for
-                        managing data interchange between the server and the
-                        users. Your primary focus will be developing all
-                        server-side logic, definition and maintenance of the
-                        central database, ensuring high performance and
-                        responsiveness to requests from the front-end. You will
-                        also be responsible for integrating the front-end
-                        elements built by your co-workers into the application.
-                        Therefore, a basic understanding of front-end
-                        technologies is necessary as well.
+                        The candidate has to be an expert in Docker and
+                        containerisation technologies with knowledge of
+                        container orchestration tools like Kubernetes and
+                        logging/monitoring tools for these orchestration tools.
+                        They will also be responsible for building and improving
+                        our application CI/CD pipelines and keeping themselves
+                        and their team up-to-date with the latest industry
+                        trends and technologies.
                       </p>
                     </div>
                     <div className='accordion_content'>
                       <h2>Responsibilities:</h2>
-                      <p className='mb-5'>
-                        You will work alongside our Lead developer and
-                        collaborate with the team on all activities below.
-                      </p>
+                      {/* <p className='mb-5'>
+                      You will work alongside our Lead developer and collaborate
+                      with the team on all activities below.
+                    </p> */}
                       <span>
+                        <li>Implement and improve monitoring and alerting.</li>
                         <li>
-                          Integration of user-facing elements developed by
-                          front-end developers with server-side logic.
+                          Build and maintain highly available systems on
+                          Kubernetes.
                         </li>
-                        <li>Writing reusable, testable, and efficient code.</li>
+                        <li>Implement and manage CI/CD pipelines.</li>
                         <li>
-                          Design and implementation of low-latency,
-                          high-availability, and performant applications.
+                          Implement an auto-scaling system for our Kubernetes
+                          nodes.
                         </li>
-                        <li>Implementation of security and data protection.</li>
+                        <li>Participate in on-call rotations.</li>
                       </span>
                     </div>
                     <div className='accordion_content'>
                       <h2>Requirements:</h2>
-                      <li>Strong proficiency with JavaScript.</li>
                       <li>
-                        Knowledge of Node.js and frameworks like Express, Koa
-                        and Keystone.
+                        Operations or systems administration experience,
+                        particularly on Linux.
                       </li>
                       <li>
-                        Understanding the nature of asynchronous programming and
-                        its quirks and workarounds.
+                        At least two years of experience on Azure or AWS cloud
+                        service.
+                      </li>
+                      <li>Experience with container networking on Docker.</li>
+                      <li>Experience with container orchestration.</li>
+                      <li>
+                        Experience with monitoring tools like Prometheus,
+                        Grafana, etc.
                       </li>
                       <li>
-                        Good understanding of server-side templating languages
-                        such as Jade, EJS, Nunjucks.
-                      </li>
-                      <li>
-                        Basic knowledge of front-end technologies, such as HTML5
-                        and CSS3.
-                      </li>
-                      <li>
-                        User authentication and authorisation between multiple
-                        systems, servers, and environments.
-                      </li>
-                      <li>
-                        Integration of various data sources and databases into
-                        one system.
-                      </li>
-                      <li>
-                        Understanding fundamental design principles behind a
-                        scalable application.
-                      </li>
-                      <li>
-                        Creating database schemas that represent and support
-                        business processes.
-                      </li>
-                      <li>
-                        Proficient understanding of code versioning tools, such
-                        as Git.
+                        Experience with application deployment by using CI/CD.
                       </li>
                     </div>
                   </div>
@@ -214,4 +201,4 @@ const Jobdescription = () => {
     </>
   );
 };
-export default Jobdescription;
+export default Devjob;

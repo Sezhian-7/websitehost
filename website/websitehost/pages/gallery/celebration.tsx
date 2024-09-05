@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { CeleImages } from '../../userdata/CeleBration';
+import { CeleImages } from '../../../userdata/CeleBration';
 import Image from 'next/image';
-import { Celebrationslider } from '../../component/slideshow/Celebrationslider';
-import Arrow from '../../asset/image/svg/Arrow';
+import { Celebrationslider } from '../../../component/slideshow/Celebrationslider';
+import Arrow from '../../../asset/image/svg/Arrow';
 import { useRouter } from 'next/router';
-import DynamicHead from '../../component/head/DynamicHead';
+import DynamicHead from '../../../component/head/DynamicHead';
 interface CeleBrationProps {
   onClose?: any;
 }

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import Arrow from '../../asset/image/svg/Arrow';
+import Arrow from '../../../asset/image/svg/Arrow';
 import Router from 'next/router';
-import { OpenGallery } from '../../userdata/OpenCermony';
-import { Gallerysilder } from '../../component/slideshow/Galleryslider';
+import { OpenGallery } from '../../../userdata/OpenCermony';
+import { Gallerysilder } from '../../../component/slideshow/Galleryslider';
 import { useRouter } from 'next/router';
-import DynamicHead from '../../component/head/DynamicHead';
+import DynamicHead from '../../../component/head/DynamicHead';
 interface OpenCermonyProps {
   onClose?: any;
 }

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import Img1 from '../../asset/image/svg/Puzzle';
-import { Herocard } from '../../component/card/herocard/Herocard';
-import { Team } from '../../component/team/Team';
-import { TeamList } from '../../asset/TeamData';
-import BG_SVG from '../../asset/image/svg/BG_SVG';
+import Img1 from '../../../asset/image/svg/Puzzle';
+import { Herocard } from '../../../component/card/herocard/Herocard';
+import { Team } from '../../../component/team/Team';
+import { TeamList } from '../../../asset/TeamData';
+import BG_SVG from '../../../asset/image/svg/BG_SVG';
 import { useRouter } from 'next/router';
-import DynamicHead from '../../component/head/DynamicHead';
+import DynamicHead from '../../../component/head/DynamicHead';
 
 const Teams = () => {
   const [toggleState, setToggleState] = useState<any>();

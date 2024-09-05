@@ -1,8 +1,8 @@
-import Img1 from '../asset/image/svg/Heroimg1';
-import { Herocard } from '../component/card/herocard/Herocard';
-import { Button } from '../component/button/Button';
+import Img1 from '../../asset/image/svg/Heroimg1';
+import { Herocard } from '../../component/card/herocard/Herocard';
+import { Button } from '../../component/button/Button';
 import Link from 'next/link';
-import DynamicHead from '../component/head/DynamicHead';
+import DynamicHead from '../../component/head/DynamicHead';
 
 const NotFound = () => {
   return (

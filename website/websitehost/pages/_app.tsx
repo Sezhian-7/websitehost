@@ -1,4 +1,4 @@
-import Layout from "../component/layout/Layout";
+import Layout from "../../component/layout/Layout";
 import react, { useEffect, useState } from "react";
 
 import "../styles/theme.css";

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 // import Accordion from '../../component/accordion/Accordion';
-import { Herocard } from '../../component/card/herocard/Herocard';
-import Img2 from '../../asset/image/svg/Heroimg2';
-import Arrow from '../../asset/image/svg/Arrow';
-import BG_SVG from '../../asset/image/svg/BG_SVG';
-import Uparrowimage from '../../asset/image/svg/Uparrowimage';
-import DownArrow from '../../asset/image/svg/DownArrow';
+import { Herocard } from '../../../component/card/herocard/Herocard';
+import Img2 from '../../../asset/image/svg/Jobdes';
+import Arrow from '../../../asset/image/svg/Arrow';
+import BG_SVG from '../../../asset/image/svg/BG_SVG';
+import Uparrowimage from '../../../asset/image/svg/Uparrowimage';
+import DownArrow from '../../../asset/image/svg/DownArrow';
 import {
   Accordion,
   AccordionItem,
@@ -14,24 +14,27 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import Router from 'next/router';
-import { MailTo } from '../../component/MailTo';
-import DynamicHead from '../../component/head/DynamicHead';
+import { MailTo } from '../../../component/MailTo';
+import DynamicHead from '../../../component/head/DynamicHead';
 
-const Frontendjob = () => {
+const Jobdescription = () => {
   const [showAccordion, setAccordion] = useState(false);
+
   const handleClickScroll = (e: any) => {
     const element = document.getElementById('accordion__heading-1');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // aria-expanded="true"
   return (
     <>
       <DynamicHead
-        title='Front End Developer'
-        description='We are looking for qualified Front-end developers with a minimum of 2 years experience to join our team. You will be responsible for building the ‘client-side’ of our web & mobile applications. You are required to work in teams alongside Back end Developers and User Experience Designers to ensure all elements of web creation are consistent. This requires excellent communication and interpersonal skills.'
+        title='Node JS Developer'
+        description='We are looking for a Node.js developer with a minimum of 2 year’s experience responsible for managing the interchange of data between the server.'
       >
-        <section className='main_section bg-gray-block develop_circle_background'>
+        <section className='main_section bg-white-block develop_circle_background'>
           <div className='mv-container'>
             <div className='back_section'>
               <span
@@ -43,7 +46,7 @@ const Frontendjob = () => {
               </span>
             </div>
             <span className='multi_heading text_des mb-0'>
-              <h1 className='heading_story text_des mb-[45px]'>Front End</h1>
+              <h1 className='heading_story text_des mb-[45px]'>Node JS </h1>
               <h1 className='heading_story text_des mb-[45px]'>Developer</h1>
             </span>
           </div>
@@ -60,18 +63,18 @@ const Frontendjob = () => {
                   <div className='accordion_space_block mb-[20px]'>
                     <div className='accordion_content'>
                       <h2>Job Description</h2>
-                      <p className='mb-[20px]'>
-                        We are looking for qualified Front-end developers with a
-                        minimum two years of experience to join our team. You
-                        will be responsible for building the
-                        &apos;client-side&apos; of our web & mobile
-                        applications.
-                      </p>
                       <p>
-                        You are required to work in teams alongside Back end
-                        Developers and User Experience Designers to ensure all
-                        elements of web creation are consistent. This requires
-                        excellent communication and interpersonal skills.
+                        Mediwave Digital is looking for a Node.js Developer with
+                        a minimum of two years of experience responsible for
+                        managing data interchange between the server and the
+                        users. Your primary focus will be developing all
+                        server-side logic, definition and maintenance of the
+                        central database, ensuring high performance and
+                        responsiveness to requests from the front-end. You will
+                        also be responsible for integrating the front-end
+                        elements built by your co-workers into the application.
+                        Therefore, a basic understanding of front-end
+                        technologies is necessary as well.
                       </p>
                     </div>
                     <div className='accordion_content'>
@@ -82,51 +85,56 @@ const Frontendjob = () => {
                       </p>
                       <span>
                         <li>
-                          Use markup languages like HTML to create user-friendly
-                          responsive web pages.
+                          Integration of user-facing elements developed by
+                          front-end developers with server-side logic.
                         </li>
-                        <li>Maintain and improve websites.</li>
-                        <li>Optimise applications for maximum speed.</li>
-                        <li>Design mobile-based features.</li>
+                        <li>Writing reusable, testable, and efficient code.</li>
                         <li>
-                          Assure that all user input is validated before
-                          submitting to the back-end.
+                          Design and implementation of low-latency,
+                          high-availability, and performant applications.
                         </li>
-                        <li>
-                          Collaborate with back-end developers and web designers
-                          to improve usability.
-                        </li>
-                        <li>
-                          Maintaining brand consistency throughout the design.
-                        </li>
+                        <li>Implementation of security and data protection.</li>
                       </span>
                     </div>
                     <div className='accordion_content'>
                       <h2>Requirements:</h2>
+                      <li>Strong proficiency with JavaScript.</li>
                       <li>
-                        Proficient understanding of web markup, including HTML5,
-                        CSS3.
+                        Knowledge of Node.js and frameworks like Express, Koa
+                        and Keystone.
                       </li>
                       <li>
-                        Basic understanding of server-side CSS pre-processing
-                        platforms, such as LESS and SASS.
+                        Understanding the nature of asynchronous programming and
+                        its quirks and workarounds.
                       </li>
                       <li>
-                        Proficient understanding of client-side scripting and
-                        JavaScript frameworks, including jQuery.
+                        Good understanding of server-side templating languages
+                        such as Jade, EJS, Nunjucks.
                       </li>
                       <li>
-                        Good understanding of advanced JavaScript libraries and
-                        frameworks such as React.js, Bootstrap, Ionic, Node js,
-                        CMS Framework like Apostrophe, Wagtail, keystone.
+                        Basic knowledge of front-end technologies, such as HTML5
+                        and CSS3.
                       </li>
-                      <li>Familiarity with browser testing and debugging.</li>
                       <li>
-                        In-depth understanding of the entire web development
-                        process (design, development and deployment).
+                        User authentication and authorisation between multiple
+                        systems, servers, and environments.
                       </li>
-                      <li>Excellent analytical and multitasking skills.</li>
-                      <li>Experience with responsive and adaptive design.</li>
+                      <li>
+                        Integration of various data sources and databases into
+                        one system.
+                      </li>
+                      <li>
+                        Understanding fundamental design principles behind a
+                        scalable application.
+                      </li>
+                      <li>
+                        Creating database schemas that represent and support
+                        business processes.
+                      </li>
+                      <li>
+                        Proficient understanding of code versioning tools, such
+                        as Git.
+                      </li>
                     </div>
                   </div>
                 </AccordionItemPanel>
@@ -206,4 +214,4 @@ const Frontendjob = () => {
     </>
   );
 };
-export default Frontendjob;
+export default Jobdescription;

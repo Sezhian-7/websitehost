@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { BirthImages } from '../../userdata/birthday';
-import { Birthdayslider } from '../../component/slideshow/Birthdayslider';
-import Arrow from '../../asset/image/svg/Arrow';
+import { BirthImages } from '../../../userdata/birthday';
+import { Birthdayslider } from '../../../component/slideshow/Birthdayslider';
+import Arrow from '../../../asset/image/svg/Arrow';
 import { useRouter } from 'next/router';
-import DynamicHead from '../../component/head/DynamicHead';
+import DynamicHead from '../../../component/head/DynamicHead';
 interface BirthdayProps {
   onClose?: any;
 }

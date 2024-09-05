@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 // import Accordion from '../../component/accordion/Accordion';
-import { Herocard } from '../../component/card/herocard/Herocard';
-import Img2 from '../../asset/image/svg/Heroimg2';
-import Arrow from '../../asset/image/svg/Arrow';
-import BG_SVG from '../../asset/image/svg/BG_SVG';
-import Uparrowimage from '../../asset/image/svg/Uparrowimage';
-import DownArrow from '../../asset/image/svg/DownArrow';
+import { Herocard } from '../../../component/card/herocard/Herocard';
+import Img2 from '../../../asset/image/svg/Heroimg2';
+import Arrow from '../../../asset/image/svg/Arrow';
+import BG_SVG from '../../../asset/image/svg/BG_SVG';
+import Uparrowimage from '../../../asset/image/svg/Uparrowimage';
+import DownArrow from '../../../asset/image/svg/DownArrow';
 import {
   Accordion,
   AccordionItem,
@@ -14,10 +14,10 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import Router from 'next/router';
-import { MailTo } from '../../component/MailTo';
-import DynamicHead from '../../component/head/DynamicHead';
+import { MailTo } from '../../../component/MailTo';
+import DynamicHead from '../../../component/head/DynamicHead';
 
-const Devjob = () => {
+const Projectmanager = () => {
   const [showAccordion, setAccordion] = useState(false);
   const handleClickScroll = (e: any) => {
     const element = document.getElementById('accordion__heading-1');
@@ -28,9 +28,8 @@ const Devjob = () => {
   return (
     <>
       <DynamicHead
-        title='React JS
-Developer'
-        description='We are looking for a React.js developer with a minimum of 2 year’s experience responsible for managing the interchange of data between the server.'
+        title='Project Manager'
+        description='The principal role of a Project Manager is to plan, lead, organise, and motivate project teams. The goals are to achieve a high level of performance and quality and deliver projects that provide exceptional business value to users.'
       >
         <section className='main_section bg-gray-block develop_circle_background'>
           <div className='mv-container'>
@@ -44,8 +43,8 @@ Developer'
               </span>
             </div>
             <span className='multi_heading text_des mb-0'>
-              <h1 className='heading_story text_des mb-[45px]'>React JS</h1>
-              <h1 className='heading_story text_des mb-[45px]'>Developer</h1>
+              <h1 className='heading_story text_des mb-[45px]'>Project </h1>
+              <h1 className='heading_story text_des mb-[45px]'>Manager</h1>
             </span>
           </div>
 
@@ -61,67 +60,116 @@ Developer'
                   <div className='accordion_space_block mb-[20px]'>
                     <div className='accordion_content'>
                       <h2>Job Description</h2>
-                      <p className='mb-[20px]'>
-                        We are looking for a DevOps engineer who knows Docker
-                        inside and out with 4 - 7 years of experience. They will
-                        be responsible for defining and implementing our
-                        containerisation technology strategies. They will also
-                        design our architecture and define our roadmap. In
-                        addition, the candidate will work on building, scaling,
-                        and monitoring various highly complex applications and
-                        making our container orchestration cluster highly
-                        available.
-                      </p>
                       <p>
-                        The candidate has to be an expert in Docker and
-                        containerisation technologies with knowledge of
-                        container orchestration tools like Kubernetes and
-                        logging/monitoring tools for these orchestration tools.
-                        They will also be responsible for building and improving
-                        our application CI/CD pipelines and keeping themselves
-                        and their team up-to-date with the latest industry
-                        trends and technologies.
+                        The principal role of a project manager is to plan,
+                        lead, organise, and motivate project teams. The goals
+                        are to achieve a high level of performance and quality
+                        and deliver projects that provide exceptional business
+                        value to users.
                       </p>
                     </div>
                     <div className='accordion_content'>
                       <h2>Responsibilities:</h2>
-                      {/* <p className='mb-5'>
-                      You will work alongside our Lead developer and collaborate
-                      with the team on all activities below.
-                    </p> */}
                       <span>
-                        <li>Implement and improve monitoring and alerting.</li>
                         <li>
-                          Build and maintain highly available systems on
-                          Kubernetes.
+                          The project manager is responsible for clearly
+                          defining and quantifying each step and establishing
+                          concrete deadlines for each project milestone and
+                          deliverables.
                         </li>
-                        <li>Implement and manage CI/CD pipelines.</li>
                         <li>
-                          Implement an auto-scaling system for our Kubernetes
-                          nodes.
+                          Anticipate risks and find resolutions before that risk
+                          can derail a major milestone or deliverable.
                         </li>
-                        <li>Participate in on-call rotations.</li>
+                        <li>
+                          Should handle all the complex aspects of the project;
+                          these aspects may be subject to constant change to
+                          accommodate market and economic conditions that
+                          directly affect implementation costs, and the
+                          organisation&apos;s potential profit or loss.
+                        </li>
                       </span>
                     </div>
                     <div className='accordion_content'>
-                      <h2>Requirements:</h2>
+                      <h2>Project Manager Tasks:</h2>
                       <li>
-                        Operations or systems administration experience,
-                        particularly on Linux.
+                        Manages day-to-day operational aspects of a project and
+                        its scopes, such as identifying resources needed and
+                        assigning individual responsibilities, reviewing
+                        deliverables, project milestones, and final project
+                        outcomes.
                       </li>
                       <li>
-                        At least two years of experience on Azure or AWS cloud
-                        service.
-                      </li>
-                      <li>Experience with container networking on Docker.</li>
-                      <li>Experience with container orchestration.</li>
-                      <li>
-                        Experience with monitoring tools like Prometheus,
-                        Grafana, etc.
+                        Quantify priority change impacts to succeeding projects,
+                        such as organisational opportunity costs of delays and
+                        time delays
                       </li>
                       <li>
-                        Experience with application deployment by using CI/CD.
+                        Diligent management of team&apos;s capacity plan,
+                        ensuring live dates are accurately reflected, cross-team
+                        dependent work is being prioritised, started, and
+                        completed in a manner that minimises waste across teams.
                       </li>
+                      <li>
+                        Build, maintain and evolve an organisational project
+                        Status Dashboard. Hours spent by project, late projects,
+                        current projects by team(s), projects by category
+                        (revenue, risks, etc.)
+                      </li>
+                      <li>
+                        Manages the life cycle of projects, including project
+                        risks/issues, and escalates them by mitigation plans;
+                        tracks and communicates changes to reach milestones.
+                      </li>
+                      <li>
+                        Manages relationship, communication, and training with
+                        project stakeholders, sponsors, and vendors by keeping
+                        them closely engaged in all aspects of the project and
+                        escalating issues.
+                      </li>
+                      <li>
+                        Coordinates efforts with the director to prepare
+                        budgets. Monitors budgets to ensure that spending is
+                        appropriately tracked and within established guidelines.
+                      </li>
+                    </div>
+                    <div className='accordion_content'>
+                      <h2>Education:</h2>
+                      <span>
+                        <li>
+                          Bachelor&apos;s degree in management information
+                          systems (MIS), computer science, or related
+                          engineering.
+                        </li>
+                      </span>
+                    </div>
+                    <div className='accordion_content'>
+                      <h2>Experience Skills:</h2>
+                      <span>
+                        <li>
+                          The technical project manager should have superior
+                          communications skills.
+                        </li>
+                        <li>
+                          Must be able to motivate and lead internal resources
+                          to work together to resolve complex technical
+                          problems.
+                        </li>
+                        <li>
+                          Manages projects through proven skills in problem
+                          analysis/solutions, cost/benefit analysis, change
+                          management, risk and issue management, balancing
+                          multiple priorities.
+                        </li>
+                        <li>
+                          Familiar with working on a project management tool
+                          such as Jira, Wrike or the like.
+                        </li>
+                        <li>
+                          Strong knowledge of the Agile manifesto and its
+                          principles is a plus.
+                        </li>
+                      </span>
                     </div>
                   </div>
                 </AccordionItemPanel>
@@ -201,4 +249,4 @@ Developer'
     </>
   );
 };
-export default Devjob;
+export default Projectmanager;

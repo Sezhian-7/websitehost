@@ -1,11 +1,11 @@
-import { Herocard } from '../component/card/herocard/Herocard';
-import Img1 from '../asset/image/svg/Contactimg';
+import { Herocard } from '../../component/card/herocard/Herocard';
+import Img1 from '../../asset/image/svg/Contactimg';
 
-import { ListCard } from '../component/card/listcard/ListCard';
+import { ListCard } from '../../component/card/listcard/ListCard';
 
-import { ContactCardData } from '../userdata/UserData';
-import { ContactForm } from '../component/contactForm/ContactForm';
-import DynamicHead from '../component/head/DynamicHead';
+import { ContactCardData } from '../../userdata/UserData';
+import { ContactForm } from '../../component/contactForm/ContactForm';
+import DynamicHead from '../../component/head/DynamicHead';
 
 const Contact = () => {
   return (

@@ -1,14 +1,14 @@
-import Img1 from '../../asset/image/svg/Careerfly';
-import Img2 from '../../asset/image/svg/Cantfind';
+import Img1 from '../../../asset/image/svg/Careerfly';
+import Img2 from '../../../asset/image/svg/Cantfind';
 
-import { MultiCard } from '../../component/card/multicard/MultiCard';
-import { EmployeeBenefits, CareerListCardData } from '../../userdata/UserData';
-import { Herocard } from '../../component/card/herocard/Herocard';
-import BG_SVG from '../../asset/image/svg/BG_SVG';
-import { ListCard } from '../../component/card/listcard/ListCard';
-import Slideshow from '../../component/slideshow/Slideshow';
-import { AnimatedSection } from '../../component/animated/AnimatedSection';
-import DynamicHead from '../../component/head/DynamicHead';
+import { MultiCard } from '../../../component/card/multicard/MultiCard';
+import { EmployeeBenefits, CareerListCardData } from '../../../userdata/UserData';
+import { Herocard } from '../../../component/card/herocard/Herocard';
+import BG_SVG from '../../../asset/image/svg/BG_SVG';
+import { ListCard } from '../../../component/card/listcard/ListCard';
+import Slideshow from '../../../component/slideshow/Slideshow';
+import { AnimatedSection } from '../../../component/animated/AnimatedSection';
+import DynamicHead from '../../../component/head/DynamicHead';
 
 const Careers = () => {
   return (

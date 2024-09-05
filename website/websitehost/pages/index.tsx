@@ -1,21 +1,21 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Router from 'next/router';
-import DynamicHead from '../component/head/DynamicHead';
-import ScrollToSection from '../component/section/ScrollToSection';
+import DynamicHead from '../../component/head/DynamicHead';
+import ScrollToSection from '../../component/section/ScrollToSection';
 
-import { Herocard } from '../component/card/herocard/Herocard';
-import Img1 from '../asset/image/svg/Heroimg1';
-import Star from '../asset/image/svg/star';
-import Medical from '../asset/image/svg/medical';
-import Fortnight from '../asset/image/svg/fortnight';
-import Performance from '../asset/image/svg/performance';
+import { Herocard } from '../../component/card/herocard/Herocard';
+import Img1 from '../../asset/image/svg/Heroimg1';
+import Star from '../../asset/image/svg/star';
+import Medical from '../../asset/image/svg/medical';
+import Fortnight from '../../asset/image/svg/fortnight';
+import Performance from '../../asset/image/svg/performance';
 import funimages1 from '../asset/image/jpg&png/funimages1.png';
 import funimages2 from '../asset/image/jpg&png/funimages2.png';
 import funimages3 from '../asset/image/jpg&png/funimages3.png';
 import funimages4 from '../asset/image/jpg&png/funimages4.png';
 import funimages5 from '../asset/image/jpg&png/funimages5.png';
-import { AnimatedSection } from '../component/animated/AnimatedSection';
+import { AnimatedSection } from '../../component/animated/AnimatedSection';
 import '../styles/Home.module.css';
 import {
   JoinUsData,
@@ -23,17 +23,17 @@ import {
   multiCardData,
   TestimonialContent,
   TestMessage,
-} from '../userdata/UserData';
-import { ListCard } from '../component/card/listcard/ListCard';
-import { Button } from '../component/button/Button';
-import { MultiCard } from '../component/card/multicard/MultiCard';
-import BG_SVG from '../asset/image/svg/BG_SVG';
+} from '../../userdata/UserData';
+import { ListCard } from '../../component/card/listcard/ListCard';
+import { Button } from '../../component/button/Button';
+import { MultiCard } from '../../component/card/multicard/MultiCard';
+import BG_SVG from '../../asset/image/svg/BG_SVG';
 import '../styles/Home.module.css';
-import { Meetteam } from '../component/meetteam/Meetteam';
-import { ExternalLink } from '../component/ExternalLink';
-import { TestimonialCard } from '../component/card/testcard/TestimonialCard';
+import { Meetteam } from '../../component/meetteam/Meetteam';
+import { ExternalLink } from '../../component/ExternalLink';
+import { TestimonialCard } from '../../component/card/testcard/TestimonialCard';
 
-import Page from '../component/page/Page';
+import Page from '../../component/page/Page';
 
 export default function Home() {
   const [readMoreData, setreadMoreData] = useState([]);

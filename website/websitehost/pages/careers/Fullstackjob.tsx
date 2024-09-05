@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 // import Accordion from '../../component/accordion/Accordion';
-import { Herocard } from '../../component/card/herocard/Herocard';
-import Img2 from '../../asset/image/svg/Heroimg2';
-import Arrow from '../../asset/image/svg/Arrow';
-import BG_SVG from '../../asset/image/svg/BG_SVG';
-import Uparrowimage from '../../asset/image/svg/Uparrowimage';
-import DownArrow from '../../asset/image/svg/DownArrow';
+import { Herocard } from '../../../component/card/herocard/Herocard';
+import Img2 from '../../../asset/image/svg/Heroimg2';
+import Arrow from '../../../asset/image/svg/Arrow';
+import BG_SVG from '../../../asset/image/svg/BG_SVG';
+import Uparrowimage from '../../../asset/image/svg/Uparrowimage';
+import DownArrow from '../../../asset/image/svg/DownArrow';
 import {
   Accordion,
   AccordionItem,
@@ -14,10 +14,10 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 import Router from 'next/router';
-import { MailTo } from '../../component/MailTo';
-import DynamicHead from '../../component/head/DynamicHead';
+import { MailTo } from '../../../component/MailTo';
+import DynamicHead from '../../../component/head/DynamicHead';
 
-const Projectmanager = () => {
+const Fullstackjob = () => {
   const [showAccordion, setAccordion] = useState(false);
   const handleClickScroll = (e: any) => {
     const element = document.getElementById('accordion__heading-1');
@@ -28,8 +28,8 @@ const Projectmanager = () => {
   return (
     <>
       <DynamicHead
-        title='Project Manager'
-        description='The principal role of a Project Manager is to plan, lead, organise, and motivate project teams. The goals are to achieve a high level of performance and quality and deliver projects that provide exceptional business value to users.'
+        title='Full Stack Developer'
+        description='We are looking for a Full Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment. As a Full Stack Developer, you should be comfortable around both front-end and back-end coding languages, development frameworks and third-party libraries. You should also be a team player with a knack for visual design and utility.'
       >
         <section className='main_section bg-gray-block develop_circle_background'>
           <div className='mv-container'>
@@ -43,8 +43,8 @@ const Projectmanager = () => {
               </span>
             </div>
             <span className='multi_heading text_des mb-0'>
-              <h1 className='heading_story text_des mb-[45px]'>Project </h1>
-              <h1 className='heading_story text_des mb-[45px]'>Manager</h1>
+              <h1 className='heading_story text_des mb-[45px]'>Full Stack </h1>
+              <h1 className='heading_story text_des mb-[45px]'>Developer</h1>
             </span>
           </div>
 
@@ -60,116 +60,75 @@ const Projectmanager = () => {
                   <div className='accordion_space_block mb-[20px]'>
                     <div className='accordion_content'>
                       <h2>Job Description</h2>
+                      <p className='mb-[20px]'>
+                        We are looking for a Full Stack Developer to produce
+                        scalable software solutions. You&apos;ll be part of a
+                        cross-functional team that&apos;s responsible for the
+                        entire software development life cycle, from conception
+                        to deployment.
+                      </p>
                       <p>
-                        The principal role of a project manager is to plan,
-                        lead, organise, and motivate project teams. The goals
-                        are to achieve a high level of performance and quality
-                        and deliver projects that provide exceptional business
-                        value to users.
+                        As a Full Stack Developer, you should be comfortable
+                        around both front-end and back-end coding languages,
+                        development frameworks and third-party libraries. You
+                        should also be a team player with a knack for visual
+                        design and utility.
                       </p>
                     </div>
                     <div className='accordion_content'>
                       <h2>Responsibilities:</h2>
+                      {/* <p className='mb-5'>
+                      You will work alongside our Lead developer and collaborate
+                      with the team on all activities below.
+                    </p> */}
                       <span>
                         <li>
-                          The project manager is responsible for clearly
-                          defining and quantifying each step and establishing
-                          concrete deadlines for each project milestone and
-                          deliverables.
+                          Design client-side and server-side architecture.
                         </li>
                         <li>
-                          Anticipate risks and find resolutions before that risk
-                          can derail a major milestone or deliverable.
+                          Develop and manage well-functioning databases and
+                          applications.
+                        </li>
+                        <li>Write effective APIs.</li>
+                        <li>
+                          Ensuring cross-platform optimisation for mobile
+                          phones.
                         </li>
                         <li>
-                          Should handle all the complex aspects of the project;
-                          these aspects may be subject to constant change to
-                          accommodate market and economic conditions that
-                          directly affect implementation costs, and the
-                          organisation&apos;s potential profit or loss.
+                          Work with development teams and product managers to
+                          ideate software solutions.
                         </li>
+                        <li>
+                          Test software to ensure responsiveness and efficiency.
+                        </li>
+                        <li>Troubleshoot, debug and upgrade software.</li>
+                        <li>Meeting both technical and consumer needs.</li>
                       </span>
                     </div>
                     <div className='accordion_content'>
-                      <h2>Project Manager Tasks:</h2>
+                      <h2>Requirements:</h2>
                       <li>
-                        Manages day-to-day operational aspects of a project and
-                        its scopes, such as identifying resources needed and
-                        assigning individual responsibilities, reviewing
-                        deliverables, project milestones, and final project
-                        outcomes.
+                        Proficiency with server-side languages such as Node js,
+                        PHP and .Net.
                       </li>
                       <li>
-                        Quantify priority change impacts to succeeding projects,
-                        such as organisational opportunity costs of delays and
-                        time delays
+                        Proficiency with JavaScript frameworks such as Angular,
+                        Ionic, React js and React native.
                       </li>
                       <li>
-                        Diligent management of team&apos;s capacity plan,
-                        ensuring live dates are accurately reflected, cross-team
-                        dependent work is being prioritised, started, and
-                        completed in a manner that minimises waste across teams.
+                        Proficiency with database technology such as MySQL,
+                        Oracle, Postgresql and Mongo DB.
                       </li>
                       <li>
-                        Build, maintain and evolve an organisational project
-                        Status Dashboard. Hours spent by project, late projects,
-                        current projects by team(s), projects by category
-                        (revenue, risks, etc.)
+                        Familiarity with fundamental front-end languages and
+                        libraries (e.g. HTML/ CSS, JavaScript, XML, jQuery).
                       </li>
                       <li>
-                        Manages the life cycle of projects, including project
-                        risks/issues, and escalates them by mitigation plans;
-                        tracks and communicates changes to reach milestones.
+                        Strong organisational and project management skills.
                       </li>
-                      <li>
-                        Manages relationship, communication, and training with
-                        project stakeholders, sponsors, and vendors by keeping
-                        them closely engaged in all aspects of the project and
-                        escalating issues.
-                      </li>
-                      <li>
-                        Coordinates efforts with the director to prepare
-                        budgets. Monitors budgets to ensure that spending is
-                        appropriately tracked and within established guidelines.
-                      </li>
-                    </div>
-                    <div className='accordion_content'>
-                      <h2>Education:</h2>
-                      <span>
-                        <li>
-                          Bachelor&apos;s degree in management information
-                          systems (MIS), computer science, or related
-                          engineering.
-                        </li>
-                      </span>
-                    </div>
-                    <div className='accordion_content'>
-                      <h2>Experience Skills:</h2>
-                      <span>
-                        <li>
-                          The technical project manager should have superior
-                          communications skills.
-                        </li>
-                        <li>
-                          Must be able to motivate and lead internal resources
-                          to work together to resolve complex technical
-                          problems.
-                        </li>
-                        <li>
-                          Manages projects through proven skills in problem
-                          analysis/solutions, cost/benefit analysis, change
-                          management, risk and issue management, balancing
-                          multiple priorities.
-                        </li>
-                        <li>
-                          Familiar with working on a project management tool
-                          such as Jira, Wrike or the like.
-                        </li>
-                        <li>
-                          Strong knowledge of the Agile manifesto and its
-                          principles is a plus.
-                        </li>
-                      </span>
+                      <li>Excellent verbal communication skills.</li>
+                      <li>Good problem-solving skills.</li>
+                      <li>Attention to detail.</li>
                     </div>
                   </div>
                 </AccordionItemPanel>
@@ -249,4 +208,4 @@ const Projectmanager = () => {
     </>
   );
 };
-export default Projectmanager;
+export default Fullstackjob;

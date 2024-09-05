@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   // basePath: 'https://Sezhian-7.github.io/websitehost/',
   basePath: '/websitehost',
-  assetPrefix: '/styles',
+  assetPrefix: '/websitehost',
 
   swcMinify: true,
   images: {

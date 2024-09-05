@@ -1,10 +1,10 @@
-import { Herocard } from '../../component/card/herocard/Herocard';
-import Img1 from '../../asset/image/svg/Puzzle';
-import { ListCard } from '../../component/card/listcard/ListCard';
-import { OurCardData } from '../../userdata/UserData';
-import Accordion from '../../component/accordion/Accordion';
-import { AnimatedSection } from '../../component/animated/AnimatedSection';
-import DynamicHead from '../../component/head/DynamicHead';
+import { Herocard } from '../../../component/card/herocard/Herocard';
+import Img1 from '../../../asset/image/svg/Puzzle';
+import { ListCard } from '../../../component/card/listcard/ListCard';
+import { OurCardData } from '../../../userdata/UserData';
+import Accordion from '../../../component/accordion/Accordion';
+import { AnimatedSection } from '../../../component/animated/AnimatedSection';
+import DynamicHead from '../../../component/head/DynamicHead';
 
 const OurTeam = () => {
   return (

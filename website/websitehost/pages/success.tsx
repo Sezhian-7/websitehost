@@ -1,7 +1,7 @@
 import React from 'react';
-import Thankyou from '../asset/image/svg/Thankyou';
+import Thankyou from '../../asset/image/svg/Thankyou';
 import Link from 'next/link';
-import DynamicHead from '../component/head/DynamicHead';
+import DynamicHead from '../../component/head/DynamicHead';
 
 const success = () => {
   return (

@@ -1,20 +1,20 @@
 import React from 'react';
 import Router from 'next/router';
-import { Timesheet } from '../../component/timesheet/Timesheet';
-import { Herocard } from '../../component/card/herocard/Herocard';
-import Img2 from '../../asset/image/svg/Heroimg2';
+import { Timesheet } from '../../../component/timesheet/Timesheet';
+import { Herocard } from '../../../component/card/herocard/Herocard';
+import Img2 from '../../../asset/image/svg/Heroimg2';
 import AboutImg from '../../asset/image/jpg&png/About.jpg';
-import { InfoCard } from '../../component/card/infocard/InfoCard';
-import { ListCard } from '../../component/card/listcard/ListCard';
+import { InfoCard } from '../../../component/card/infocard/InfoCard';
+import { ListCard } from '../../../component/card/listcard/ListCard';
 import {
   AboutListCardData,
   JoinUsData,
   timesheetimages,
-} from '../../userdata/UserData';
-import BG_SVG from '../../asset/image/svg/BG_SVG';
-import { AnimatedSection } from '../../component/animated/AnimatedSection';
+} from '../../../userdata/UserData';
+import BG_SVG from '../../../asset/image/svg/BG_SVG';
+import { AnimatedSection } from '../../../component/animated/AnimatedSection';
 import 'animate.css/animate.min.css';
-import DynamicHead from '../../component/head/DynamicHead';
+import DynamicHead from '../../../component/head/DynamicHead';
 
 const About = () => {
   return (
