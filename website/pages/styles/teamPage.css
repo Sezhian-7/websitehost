@@ -1,0 +1,26 @@
+.container {
+  @apply flex flex-col relative mx-auto;
+}
+
+.bloc-tabs {
+  @apply flex justify-evenly lg:px-16 min-w-[1000px];
+}
+.tabs {
+  @apply mb-8 md:mb-24 p-2 text-center cursor-pointer box-content relative outline-none font-bold text-primaryContent;
+}
+
+.active-tabs {
+  @apply before:block before:absolute before:content-[''] before:bottom-0 before:left-1/2 before:h-1 before:bg-primaryHeading text-primaryHeading before:translate-x-[-50%] before:w-full;
+}
+
+button {
+  @apply border-none;
+}
+
+.content {
+  @apply p-5 w-full h-full hidden;
+}
+
+.active-content {
+  @apply block grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-y-12 md:gap-y-16 lg:gap-y-32;
+}

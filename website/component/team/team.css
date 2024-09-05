@@ -1,0 +1,90 @@
+.team-container {
+  @apply flex flex-col justify-center items-center;
+}
+.team-wapper {
+  @apply h-[340px] w-[245px] [perspective:1000px];
+}
+.card {
+  @apply relative h-full w-full rounded-xl transition-all duration-[4s] [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)];
+}
+.card-wapper {
+  @apply absolute inset-0 cursor-pointer;
+}
+.card-inner {
+  @apply flex flex-col justify-center w-64 h-[340px] group-hover:rounded-xl;
+}
+.card-img-container {
+  @apply w-[180px] h-[180px] group-hover:h-[245px] group-hover:w-[245px] m-auto ease-out duration-1000;
+}
+.card-image {
+  @apply rounded-full ease-out group-hover:rounded-xl object-cover drop-shadow-[0_4px_12px_rgba(0,0,0,0.1)];
+}
+.card-context {
+  @apply flex flex-col items-start  h-[82px] justify-center pl-[35px];
+}
+.card-context-name {
+  @apply font-Raleway px-2 pb-1 font-bold text-base leading-5 text-primaryContent group-hover:text-white;
+}
+.card-context-designation {
+  @apply px-2  text-sm leading-4 text-primaryContent group-hover:text-white;
+}
+.card-flip-container {
+  @apply absolute inset-0 h-full w-64 rounded-xl px-2 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden];
+}
+.card-flip-text {
+  @apply flex min-h-full items-center justify-center;
+}
+.card-flip-text p {
+  @apply w-44 font-bold;
+}
+.card-flip-text button {
+  @apply bg-white w-12 h-12 rounded-full flex justify-center items-center [transform:rotateY(180deg)];
+}
+.card-flip-text button path {
+  @apply fill-black;
+}
+.team-popup-container {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999];
+}
+.team-popup-wapper {
+  @apply bg-popup p-2 rounded-[10px] max-h-[588px] max-w-[310px] md:max-w-md lg:max-w-[1000px];
+}
+.popup-img {
+  @apply m-auto w-32 md:w-60 lg:w-72 h-32 md:h-60 lg:h-72;
+}
+.popup-text-wapper {
+  @apply block md:flex px-4 lg:px-12 md:pb-4 lg:pb-16;
+}
+.popup-text-wapper img {
+  @apply rounded-[14px];
+}
+.popup-name {
+  @apply text-lg font-bold text-center md:text-left text-primaryContent mt-4 md:mt-0 !font-Raleway;
+}
+.popup-designation {
+  @apply text-base text-center md:text-left text-primaryContent;
+}
+.popup-detial {
+  @apply h-48 overflow-y-auto text-sm lg:text-base text-primaryContent;
+}
+.slider-container {
+  @apply relative md:mx-5 lg:mx-10 mb-4 lg:mb-14;
+}
+.map-container {
+  @apply m-auto max-md:mb-14 w-[85%] max-w-[1500px] h-[740px] pb-[45px] md:pb-[100px] lg:pb-[195px];
+}
+.map-container iframe {
+  @apply w-full h-full;
+}
+
+.popup_img_background {
+  background-image: url(../team/popupimg.svg);
+  background-repeat: no-repeat;
+  background-position: right 58px bottom 149px;
+}
+
+@media (max-width: 1020px) {
+  .popup_img_background {
+    background-size: 50%;
+  }
+}

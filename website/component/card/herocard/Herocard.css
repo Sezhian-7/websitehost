@@ -1,0 +1,35 @@
+.hero_section {
+  @apply grid lg:grid-cols-2 max-2xl:gap-3;
+}
+.herocard_content_section {
+  @apply text-center m-auto;
+}
+.herocard_heading {
+  @apply text-9xl font-bold font-Raleway mb-5 text-left text-primaryHeading;
+}
+.herocard_content {
+  @apply text-xl font-light font-Nunito text-center lg:text-left text-primaryContent;
+}
+.img_hero {
+  @apply flex justify-center lg:justify-end row-start-1 lg:row-start-auto  mb-12 md:mb-[30px];
+}
+
+.card_heading {
+  @apply flex justify-center lg:justify-start lg:text-left text-center;
+}
+
+.card_heading span:last-child {
+  @apply text-primaryHeading md:text-left;
+}
+
+.landing_heading h1 {
+  @apply text-7xl md:text-8xl lg:text-9xl font-bold font-Raleway mb-6 md:text-left text-center text-primaryContent;
+}
+.btn_space {
+  @apply mt-[40px] grid gap-5 justify-center lg:justify-start;
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+}
+
+.error_block p {
+  @apply text-[42px] text-primaryHeading mb-3 font-bold;
+}

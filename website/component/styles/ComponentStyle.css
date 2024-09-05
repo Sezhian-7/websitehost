@@ -1,0 +1,22 @@
+@import '../button/Button.css';
+@import '../footer/Footer.css';
+@import '../header/Header.css';
+@import '../card/herocard/Herocard.css';
+@import '../layout/Layout.css';
+@import '../navbar/Navbar.css';
+@import '../card/multicard/MultiCard.css';
+@import '../card/infocard/InfoCard.css';
+@import '../card/listcard/ListCard.css';
+@import '../timesheet/Timesheet.css';
+@import '../slideshow/Slideshow.css';
+@import '../accordion/Accordion.css';
+@import '../meetteam/Meetteam.css';
+@import '../bubble/Bubble.css';
+@import '../team/team.css';
+@import '../../pages/styles/teamPage.css';
+@import '../teamSlider/teamslider.css';
+@import '../contactForm/contactForm.css';
+@import '../Select/SelectDropdown.css';
+@import '../../pages/styles/success.css';
+@import '../../component/Loader/loader.css'; /* @import "../../pages/gallery/opencermony.css"; */
+@import '../animated/animated.css';

@@ -1,0 +1,169 @@
+.colorfull_entry {
+  @apply grid w-[329px] h-[564px] rounded-sm overflow-hidden border-2 border-white shadow-md;
+}
+
+.colorfull_content {
+  @apply grid w-[329px] h-[564px] overflow-hidden;
+}
+
+.Inside_colorfull {
+  @apply rounded-sm border-2 border-white overflow-hidden shadow-md;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.min_image_length {
+  @apply min-h-[595px];
+}
+
+.slide_images {
+  @apply w-[256px] h-[276px] rounded-sm border-solid border-2 border-white overflow-hidden shadow-md;
+}
+
+.welcoming_images {
+  @apply w-[329px] h-[564px] rounded-sm border-solid border-2 border-white overflow-hidden m-auto shadow-md;
+}
+
+.opening_images {
+  @apply w-[329px] h-[355px];
+}
+
+.slide_two_images {
+  @apply grid gap-10;
+}
+
+/* slides css */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-swiper .swiper-slide{
+  flex-shrink: 1 !important;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+@media (max-width: 768px){
+  .gallery-swiper .swiper-slide {
+    flex-shrink: 0 !important
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-next {
+  background-image: url(../../asset/image/svg/next.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  @apply hidden;
+}
+.swiper-button-prev {
+  background-image: url(../../asset/image/svg/prev.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  @apply hidden;
+}
+
+.click-close-popup {
+  @apply text-end p-2 lg:p-5;
+}
+
+.gallery-image-popup {
+  @apply block md:flex px-4 lg:px-12 md:pb-4 lg:pb-16;
+}
+
+.gallery-image-popup img {
+  @apply m-auto;
+}
+
+.swipers-images-popup {
+  @apply relative mx-5 mb-4 lg:mb-14 mt-4;
+  cursor: pointer;
+}
+
+.teams-popup-container {
+  @apply fixed inset-0 bg-black bg-opacity-[0.5] flex items-center justify-center z-[1000];
+}
+
+.teams-popup-wapper {
+  @apply max-w-[1200px] w-[80%] bg-primary min-h-[500px] relative rounded-sm;
+}
+
+.overlay {
+  @apply bg-opacity-0 bg-black opacity-0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.fest_celebration {
+  position: relative;
+  /* width: 50%; */
+}
+
+.fest_celebration:hover .overlay {
+  @apply bg-opacity-[0.5] bg-black opacity-100;
+}
+
+.text {
+  @apply font-Raleway font-normal font-bold;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  bottom: 0px;
+  left: 38%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.popup_circle_background {
+  background-image: url(../slideshow/popupimg.svg); 
+  background-repeat: no-repeat;
+  background-position: bottom 217px center;
+}
+
+@media (max-width: 900px) {
+  .popup_circle_background {
+    background-size: contain;
+  }
+}

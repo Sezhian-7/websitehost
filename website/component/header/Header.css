@@ -1,0 +1,75 @@
+.header-block {
+  @apply mb-[5px] bg-primaryCard fixed w-full z-[1000];
+  box-shadow: 3px 0 12px 0 rgba(0, 0, 0, 0.11);
+}
+.header_section {
+  @apply flex items-center justify-between py-[35px] mx-auto;
+}
+.nav_section {
+  @apply flex items-center justify-end  max-w-[865px] w-full;
+}
+
+.header_btn_block {
+  @apply hidden min-[1200px]:block mr-[25px] min-[1366px]:mr-[30px];
+}
+
+.theme_block {
+  @apply cursor-pointer;
+}
+@media (min-width: 320px) {
+  .theme_block {
+    @apply pl-2;
+  }
+}
+.bento_menu {
+  @apply ml-[10px] cursor-pointer min-[1200px]:hidden;
+}
+@media (max-width: 360px) {
+  .bento_menu {
+    @apply ml-0;
+  }
+}
+.side-menu {
+  /* transform: translate(-100%); */
+  @apply top-0 left-0 fixed z-[1035] bg-primary overflow-hidden w-[300px] h-[100vh] shadow-md;
+}
+.side-menu a {
+  @apply text-primaryContent p-5 block;
+}
+.sidenav-backdrop {
+  z-index: 1034;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-out 0s;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+}
+
+.bento-logo {
+  @apply flex justify-center items-center shadow-md p-5 min-h-[118px];
+}
+
+.bento-nav-list {
+  @apply my-5;
+}
+
+.bento-nav-list li {
+  @apply border-b;
+}
+
+.bento-nav-list .active {
+  @apply text-primaryHeading font-bold;
+}
+
+.dark .logo_block svg path {
+  @apply fill-white;
+}
+.bento-nav-list :hover {
+  @apply bg-cardline-800 font-bold cursor-pointer;
+}
+.bento-nav-list li:hover a {
+  @apply text-white;
+}

@@ -1,0 +1,15 @@
+.success-msg {
+  @apply fixed inset-0 bg-primary text-primaryContent flex items-center justify-center z-[100];
+}
+.success-warpper {
+  @apply flex flex-col items-center;
+}
+.success-icon {
+  @apply mb-16;
+}
+.success-header-text p {
+  @apply text-8xl font-bold;
+}
+.success-header-body p {
+  @apply mt-8 mb-10 text-xl;
+}

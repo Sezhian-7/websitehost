@@ -1,0 +1,82 @@
+.form-block {
+  @apply mb-[90px] lg:mb-0;
+}
+.input-container {
+  @apply mb-6 flex flex-col items-start font-Nunito;
+}
+.input-container label {
+  @apply font-bold text-lg mb-2 text-primaryContent font-Nunito;
+}
+.input-container input,
+textarea {
+  @apply w-full text-primaryContent bg-transparent py-2 border-b border-solid border-[#B0B0B0] outline-none resize-none font-Nunito text-lg;
+}
+
+.form-inner-container {
+  @apply grid sm:grid-cols-2 sm:gap-7 mt-8 font-Nunito;
+}
+
+.form-list-card .listblock-full {
+  @apply lg:min-h-[990px] lg:py-[90px] font-Nunito;
+}
+
+/* .form-list-card .listblock-full {
+  @apply lg:min-h-[990px] lg:py-[90px]  2xl:w-3/4 lg:w-[90%] xl:w-[80%];
+}
+.form-list-card .listblock {
+  @apply lg:left-[1%] xl:left-[5%] 2xl:left-[10%];
+} */
+
+.form-list-card .card_head {
+  @apply mr-0;
+}
+.form-list-card .card_heading {
+  @apply sm:justify-start;
+}
+.img_hero svg {
+  @apply max-[563px]:w-[90%];
+}
+.img_hero {
+  @apply max-[563px]:justify-center;
+}
+.fileUpload label {
+  @apply flex font-bold text-lg items-center;
+}
+.fileUpload span {
+  @apply pr-1 text-primaryContent ml-4;
+}
+.fileUpload input {
+  @apply hidden;
+}
+.fileUpload path {
+  @apply fill-primaryContent;
+}
+.file_uploaded svg {
+  @apply w-6 block;
+}
+.form-btn {
+  @apply text-center lg:text-left font-Nunito;
+}
+.listcard_section.contact_block {
+  @apply gap-[70px];
+}
+
+.input-container .errors {
+  @apply text-red-500 text-sm font-Nunito;
+}
+.browse_font {
+  @apply font-Nunito;
+}
+.react-select__single-value {
+  @apply !text-primaryContent;
+}
+.error-msg {
+  @apply !text-[#ef4444] !text-sm;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  @apply appearance-none
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}

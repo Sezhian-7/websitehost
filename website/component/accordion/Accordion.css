@@ -1,0 +1,107 @@
+.accordion-wrap {
+  @apply rounded bg-transparent;
+}
+
+.accordion-head {
+  @apply text-3xl py-10 pl-7 pr-16 flex border border-solid justify-between items-center relative cursor-pointer border-b
+    font-bold tracking-wider w-full  text-left text-primaryHeading rounded-sm;
+}
+
+.accordion-head .acc-up-arrow {
+  @apply absolute right-4	top-6 border-r-2 border-b-2 border-l-0 border-t-0 inline-block p-1;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.accordion-head .acc-up-arrow-triangle {
+  width: 0;
+  height: 0;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.accordion-head .acc-down-arrow {
+  @apply absolute right-4 top-6 border-r-2 border-b-2 border-l-0 border-t-0 inline-block p-1;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.accordion-head .acc-down-arrow-triangle {
+  /* @apply absolute right-[-36px]	top-[15px]; */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+}
+
+.accordion-content {
+  @apply p-5;
+}
+
+.accordion-input-group {
+  @apply my-5 mx-4;
+}
+
+.accordion-input-group .block:first-child {
+  @apply mb-4;
+}
+.accordion_space_block {
+  @apply lg:py-12 lg:px-14 px-9 rounded-sm py-7 lg:mb-10 border border-solid mt-[-10px];
+}
+
+.accordion_space_block p {
+  @apply text-primaryContent font-Raleway break-words;
+}
+.accordion_space_block li {
+  @apply mb-2 text-primaryContent font-Raleway text-lg;
+}
+.accordion__item {
+  @apply lg:mb-14 md:mb-10 mb-8 rounded-sm;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+.accordion_content {
+  @apply lg:mb-10 mb-5;
+}
+.accordion_content h2 {
+  @apply lg:mb-5 mb-3 text-primaryContent font-Raleway;
+}
+.accordion_para {
+  @apply lg:mb-5 mb-3 text-primaryContent text-base font-Raleway;
+}
+.accordion_content p {
+  @apply text-primaryContent font-Raleway text-base;
+}
+.accordion_content li {
+  @apply text-primaryContent font-Raleway text-base;
+}
+/* .accordion__heading,
+.accordion__panel {
+  @apply bg-primary;
+} */
+.accordion__heading {
+  @apply bg-primary relative rounded-[11px];
+}
+.accordion__button[aria-expanded='true'] {
+  @apply bg-no-repeat;
+  background-image: url(../../asset/image/svg/uparrow.svg);
+  background-position: right 30px center;
+}
+
+.accordion__button[aria-expanded='false'] {
+  @apply bg-no-repeat;
+  background-image: url(../../asset/image/svg/downarrow.svg);
+  background-position: right 30px center;
+}
+.link_accordion {
+  @apply mt-[30px] font-Raleway;
+}
+.link_accordion a {
+  @apply text-primaryHeading font-semibold;
+}
+.accordion {
+  @apply rounded-[10px];
+}
+.accordion__button {
+  @apply rounded-[11px];
+}

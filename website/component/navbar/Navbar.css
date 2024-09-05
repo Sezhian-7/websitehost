@@ -1,0 +1,25 @@
+.primary-nav {
+  @apply hidden min-[1200px]:block;
+}
+.nav-list {
+  @apply flex justify-between;
+}
+.nav-list li {
+  @apply mr-[15px]  min-[1366px]:mr-[30px];
+}
+
+.nav-item .active {
+  @apply text-primaryHeading font-bold;
+}
+
+.nav-item .active.inactive {
+  @apply text-primaryContent;
+}
+
+.nav-item .menuactive {
+  @apply text-primaryHeading font-bold;
+}
+
+.nav-item a {
+  @apply text-primaryContent font-normal font-Nunito;
+}

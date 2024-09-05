@@ -1,0 +1,11 @@
+.info_img {
+  @apply max-w-[1100px] w-[90%] mx-auto my-[50px];
+}
+
+.infoContent {
+  @apply text-primaryContent text-xl font-Nunito font-light text-center max-w-[870px] m-auto;
+}
+
+.info_btn_block {
+  @apply text-center mt-[50px];
+}

@@ -1,0 +1,21 @@
+.btn {
+  @apply rounded border-none font-semibold py-3 px-[30px] text-base font-Nunito;
+}
+.btn:hover {
+  @apply bg-cardline-800 font-semibold text-white font-Nunito text-base border-primaryHeading border-none;
+}
+.primary-btn {
+  @apply bg-primaryHeading transition ease-linear duration-150 text-primaryContent  min-w-[150px] rounded-[50px]  border-transparent border-4 border-solid font-semibold;
+}
+
+.primary-btn:hover {
+  @apply shadow-sm border-cardline-800 border-4 border-solid bg-cardline-800 text-white text-base font-semibold;
+}
+
+.secondary-btn {
+  @apply transition ease-linear duration-150 text-primaryHeading  min-w-[150px] rounded-[50px]  border-transparent border-primaryHeading border border-solid;
+}
+
+.secondary-btn:hover {
+  @apply shadow-sm border-primaryHeading border border-solid border-transparent;
+}

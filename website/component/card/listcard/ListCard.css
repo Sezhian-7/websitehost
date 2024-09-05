@@ -1,0 +1,203 @@
+.listblock-right {
+  @apply flex flex-row-reverse;
+}
+
+.listcard_section {
+  @apply lg:flex items-center gap-7;
+}
+
+.listblock-right .listcard_section {
+  @apply flex-row-reverse;
+}
+
+.listcard_section .card_heading {
+  @apply justify-center lg:justify-start;
+}
+
+.listblock-full {
+  @apply lg:bg-bgGray m-auto lg:m-0 md:flex items-center justify-center w-[85%] md:w-[75%] lg:w-[72%] xl:w-[70%] min-h-[620px] 2xl:min-h-[600px] relative rounded-tr-sm rounded-br-sm;
+}
+
+.listblock {
+  @apply lg:w-[113%] lg:absolute lg:left-[11%] xl:left-[14%] max-w-[1500px];
+}
+
+.listblock-right .listblock {
+  @apply lg:right-[13%] lg:left-auto;
+}
+
+.listblock-right .listblock-full {
+  @apply right-[0px] left-auto rounded-tr rounded-br rounded-tl-sm rounded-bl-sm;
+}
+
+.card_head {
+  @apply lg:w-[50%] z-10 mb-6 lg:mb-0;
+}
+
+.listblock-right .card_head {
+  @apply lg:w-[50%] z-10 lg:ml-[80px];
+}
+
+.card_head h1 {
+  @apply text-primaryContent text-6xl font-Raleway font-bold text-left;
+}
+
+.card_head {
+  @apply lg:mr-10;
+}
+
+.card_head p {
+  @apply text-primaryContent text-xl font-Nunito font-light text-center lg:text-left mb-[50px];
+}
+
+.listcard_body {
+  @apply grid justify-center lg:w-[50%] z-10 relative;
+}
+
+.listcard_body .listcard_block_group:last-child {
+  @apply mb-0;
+}
+.listcard_block_group {
+  @apply mb-10 md:mb-6 opacity-0;
+}
+.double-listcard .listcard_block_group{
+@apply max-md:mb-5 mb-0
+}
+.double-listcard .listcard_block{
+  @apply min-h-full;
+}
+.listcard_block {
+  @apply relative bg-secondaryCard border-primaryCard flex border-solid justify-start flex-col md:flex-row items-center shadow-lg border border-t-[10px] md:border-t md:border-b md:border-l-[10px] min-h-[100px] rounded-sm px-[30px] py-[20px];
+}
+
+.listcard_block_group:last-child {
+  @apply mb-0;
+}
+
+.listcard_block .listcard_info {
+  @apply md:ml-6;
+}
+
+.listcard_info span {
+  @apply font-Nunito;
+}
+.listcard_info p {
+  @apply text-primaryContent;
+}
+.listcard_info a{
+  @apply break-all
+}
+.listcard_info{
+  @apply text-center
+}
+.listblock-right .listcard_block .listcard_info {
+  @apply ml-0 cursor-pointer;
+}
+
+.listcard_block h2 {
+  @apply text-2xl font-bold mt-3 md:mt-0 font-Nunito text-center md:text-left text-primaryContent;
+}
+
+.listcard_block p {
+  @apply text-lg  font-light font-Nunito text-center md:text-left mt-2 text-primaryContent;
+}
+
+.cardline-100 {
+  @apply border-t-cardline-100 md:border-gray-100/50 md:border-l-cardline-100;
+}
+
+.cardline-200 {
+  @apply border-t-cardline-200 md:border-gray-100/50 md:border-l-cardline-200;
+}
+
+.cardline-300 {
+  @apply border-t-cardline-300 md:border-gray-100/50 md:border-l-cardline-300;
+}
+
+.cardline-400 {
+  @apply border-t-cardline-400 md:border-gray-100/50 md:border-l-cardline-400;
+}
+
+.cardline-500 {
+  @apply border-t-cardline-500 md:border-gray-100/50 md:border-l-cardline-500;
+}
+
+.cardline-600 {
+  @apply border-t-cardline-600 md:border-gray-100/50 md:border-l-cardline-600;
+}
+.cardline-700 {
+  @apply border-t-cardline-700 md:border-gray-100/50 md:border-l-cardline-700;
+}
+.cardline-800 {
+  @apply border-t-cardline-800 md:border-gray-100/50 md:border-l-cardline-800;
+}
+
+.count_block {
+  @apply flex flex-col items-center min-w-[85px] m-auto;
+}
+
+.count_block h2 {
+  @apply mt-0;
+}
+
+.count_block p {
+  @apply mt-0;
+}
+
+.listcard_btn_block {
+  @apply text-center lg:text-left my-[40px] lg:mt-[50px] lg:mb-[0px];
+}
+
+.double-listcard {
+  @apply block;
+}
+.double-listcard .listcard_body .listcard_list {
+  @apply grid lg:grid-cols-2 max-md:gap-6 gap-12 w-full;
+}
+
+.double-listcard .listcard_body {
+  @apply w-full;
+}
+
+.double-listcard .listcard_block:last-child,
+.double-listcard .listcard_block {
+  @apply mb-0;
+}
+
+.double-listcard .card_head {
+  @apply w-full;
+}
+
+.double-listcard .card_heading {
+  @apply justify-center;
+}
+
+.double-listcard .card_head p {
+  @apply text-primaryContent text-xl font-Nunito font-light text-center max-w-[840px] m-auto mb-[30px];
+}
+.text_heading h2 {
+  @apply text-7xl !important;
+}
+
+.readmore-popup {
+  @apply top-[-10px] left-0 absolute md:top-[-1px] md:left-[-10px] z-10 w-[102%] rounded-[13px];
+}
+.list_ourteam {
+  @apply min-h-[800px] !important;
+}
+
+.card_hide {
+  @apply opacity-[0.2] pointer-events-none;
+}
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

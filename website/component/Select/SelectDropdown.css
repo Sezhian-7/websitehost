@@ -1,0 +1,43 @@
+.react-select__option.react-select__option--is-focused,
+.react-select__option.react-select__option--is-focused.react-select__option--is-selected {
+  @apply bg-primaryHeading !text-primaryContent;
+}
+.react-select__option.react-select__option--is-selected {
+  @apply bg-bgGray !text-primaryContent;
+}
+
+.react-select__control.react-select__control--menu-is-open,
+.react-select__control {
+  @apply shadow-none !important;
+}
+
+.react-select__menu {
+  @apply !bg-primary;
+}
+.react-select__option {
+  @apply !text-primaryContent;
+}
+.react-select__menu-list {
+  @apply max-h-[120px] overflow-y-auto !important;
+}
+.select-input-group {
+  @apply w-full;
+}
+
+.react-select__control {
+  @apply box-border w-full text-base text-primaryContent !border-0 !border-b !border-solid border-[#B0B0B0] hover:!border-[#B0B0B0] focus:!border-[#B0B0B0] !bg-transparent !rounded-none cursor-pointer;
+}
+
+.react-select__menu-list {
+  @apply !py-0;
+}
+
+.react-select__option.react-select__option--is-focused:active {
+  @apply !bg-primary !text-primaryContent;
+}
+.css-1fdsijx-ValueContainer {
+  @apply !px-0;
+}
+.css-hlgwow {
+  @apply !px-0;
+}

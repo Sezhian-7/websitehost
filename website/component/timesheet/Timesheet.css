@@ -1,0 +1,142 @@
+
+.heading_story {
+  @apply text-5xl font-bold font-Raleway text-primaryContent;
+}
+.timesheet_content {
+  @apply p-8;
+}
+.story_content {
+  @apply text-lg font-Nunito text-center text-xl mt-8;
+}
+
+.border_design {
+  @apply w-[15px] h-[20px] rounded-s bg-timeline_BG;
+}
+
+.main_design_section {
+  @apply relative mt-[60px];
+}
+
+.maintimesheet_design::after {
+  @apply absolute h-[100%] w-[8px] bg-timeline_BG;
+  content: '';
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.year_design {
+  @apply absolute top-[24px] left-[43px] right-[0px] bottom-[0px];
+}
+
+.year_design_contain {
+  @apply font-Nunito font-bold text-black;
+}
+
+.timesheet_design {
+  @apply text-right flex justify-end;
+}
+
+.image_design {
+  @apply relative ml-[16px];
+}
+
+.maintimesheet_design {
+  @apply max-w-[1500px] m-auto max-lg:w-full w-[71%];
+}
+
+.maindesign_contain {
+  @apply grid items-center min-h-[130px] mb-[26px];
+  grid-template-columns: 2fr 10px 2fr;
+}
+
+.leftside_container h1 {
+  @apply mt-5;
+}
+
+.maindesign_contain:nth-child(even) {
+  grid-column: 1;
+}
+.maindesign_contain:nth-child(even) .timesheet_design {
+  @apply text-left justify-start;
+  grid-column: 3;
+}
+.maindesign_contain:nth-child(even) .image_design {
+  grid-row: 1;
+}
+.maindesign_contain:nth-child(even) svg {
+  @apply float-right rotate-180 mr-[30px];
+}
+.maindesign_contain:nth-child(even) .year_design {
+  @apply text-right right-[72px] left-auto;
+}
+
+.icon_design {
+  @apply w-0 h-0 ml-2;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ebeaf1;
+}
+
+.maindesign_contain:nth-child(even) .icon_design {
+  @apply rotate-180 mr-[6px] w-[100%];
+  grid-row: 1;
+}
+
+.time_content_design {
+  @apply font-Nunito text-primaryContent text-lg font-light whitespace-pre-line w-full;
+}
+
+.maindesign_contain:nth-child(even) .time_content_design {
+  @apply ml-5;
+}
+
+.maindesign_contain:nth-child(odd) .time_content_design {
+  @apply mr-5;
+}
+
+.position_width {
+  @apply w-[100%] max-w-[100%];
+}
+
+
+/*responsive*/
+@media (max-width: 700px){
+.main_design_section{
+  @apply relative;
+}
+.maintimesheet_design::after{
+  @apply absolute left-0;
+}
+.maindesign_contain{
+  @apply relative !flex flex-col-reverse items-start justify-start;
+}
+.icon_design{
+  @apply absolute !w-[0px] !transform-none bottom-[53px] left-[-5px] !mr-[-1px];
+}
+.timesheet_design{
+  @apply !text-left;
+}
+.image_design{
+  @apply left-2;
+}
+.time_content_design{
+  @apply text-base min-h-[78px] mt-[5px] !ml-[23px] !mr-0;
+}
+.year_design{
+  @apply !left-[42px];
+}
+
+.maindesign_contain:nth-child(even) .image_outer{
+  @apply rotate-180 w-[100%] left-[1px];
+}
+
+.maindesign_contain:nth-child(even) svg {
+  @apply !mr-0 float-none;
+}
+}
+/*end*/
+
+

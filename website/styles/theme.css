@@ -1,0 +1,47 @@
+.light {
+  --primary: 255 255 255;
+  --primary-heading: 0 169 115;
+  --primary-content: 0 0 0;
+  --secondary: 0 107 101;
+  --secondary-content: 255 255 255;
+  --transparent: transparent;
+  --primary-card: 255 255 255;
+  --secondary-card: 255 255 255;
+  --card-line-100: 202 149 30;
+  --card-line-200: 229 0 100;
+  --card-line-300: 0 169 115;
+  --card-line-400: 18 94 156;
+  --card-line-500: 218 61 22;
+  --card-line-600: 74 40 112;
+  --card-line-700: 80 176 226;
+  --card-line-800: 0 107 101;
+  --card-line-900: 235 234 241;
+  --bg-gray: 247 247 249;
+  --bg-blue: 18 94 156;
+  --bg-footer: 107, 101, 1;
+  --popup-card: 235 234 241;
+}
+
+.dark {
+  --primary: 29 29 29;
+  --primary-heading: 0 169 115;
+  --primary-content: 255 255 255;
+  --secondary: 49 49 49;
+  --secondary-content: 255 255 255;
+  --transparent: transparent;
+  --primary-card: 49 49 49;
+  --secondary-card: 29 29 29;
+  --card-line-100: 202 149 30;
+  --card-line-200: 229 0 100;
+  --card-line-300: 0 169 115;
+  --card-line-400: 18 94 156;
+  --card-line-500: 218 61 22;
+  --card-line-600: 74 40 112;
+  --card-line-700: 80 176 226;
+  --card-line-800: 0 107 101;
+  --card-line-900: 235 234 241;
+  --bg-gray: 49 49 49;
+  --bg-blue: 18 94 156;
+  --bg-footer: 107, 101, 1;
+  --popup-card: 49 49 49;
+}

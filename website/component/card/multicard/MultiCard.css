@@ -1,0 +1,97 @@
+.multi_head h1 {
+  @apply text-primaryContent text-6xl font-Raleway font-bold text-center;
+}
+.header_top h1 {
+  @apply !mt-10;
+}
+.multi_head p {
+  @apply text-primaryContent text-xl font-Nunito font-light text-center max-w-[840px] m-auto;
+}
+
+.multi_heading {
+  @apply flex justify-center flex-wrap mb-8;
+}
+
+.multi_head a {
+  @apply text-primaryHeading font-semibold underline;
+}
+.multi_heading h1 {
+  @apply mb-0;
+}
+.multi_heading h1:last-child {
+  @apply ml-2 text-primaryHeading;
+}
+
+.multicard_body {
+  @apply grid lg:mt-[70px] mt-10;
+}
+
+.multicard_body.col-1 {
+  @apply grid-cols-1;
+}
+
+.multicard_body.col-2 {
+  @apply md:grid-cols-2;
+}
+
+.multicard_body.col-3 {
+  @apply md:grid-cols-2 lg:grid-cols-3;
+}
+
+.multicard_body.col-4 {
+  @apply md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+.card_block {
+  @apply flex justify-start flex-col items-center;
+}
+.card_block.show_line:nth-child(odd) {
+  @apply md:border-r border-solid border-gray-300/50;
+}
+
+.card_block.show_line:nth-child(1),
+.card_block.show_line:nth-child(2) {
+  @apply md:pt-0 !important;
+}
+
+.card_block.show_line:nth-last-child(1),
+.card_block.show_line:nth-last-child(2) {
+  @apply md:pb-0 !important;
+}
+
+.card_block.show_line:nth-child(2n + 1) {
+  @apply xl:py-16 md:border-b border-solid border-gray-300/70 md:py-10 py-4;
+}
+
+.card_block.show_line:nth-child(2n + 2) {
+  @apply xl:py-16 md:border-t border-solid border-gray-300/70 md:py-10  py-4;
+}
+.card_block.show_line:nth-last-child(2n + 1) {
+  @apply md:border-b md:border-t-0 !important;
+}
+.card_block.show_line:nth-last-child(3n + 2) {
+  @apply md:border-b-0;
+}
+.card_block.show_line:nth-last-child(4n + 3) {
+  @apply md:border-b-0 md:border-t-0;
+}
+.card_block.show_line:last-child {
+  @apply md:border-b-0 !important;
+}
+
+.card_block h2 {
+  @apply text-2xl font-bold font-Nunito text-center text-primaryContent mb-[10px];
+}
+
+.card_block p {
+  @apply text-lg  font-light font-Nunito text-center mb-[40px]  max-w-[455px] md:mx-5 text-primaryContent;
+}
+.Icon_block {
+  @apply mb-[30px];
+}
+/* .emp_benifits .multicard_body {
+  @apply lg:gap-20 gap-10;
+} */
+.multicard_main {
+  @apply w-[85%] m-auto mt-9;
+}

@@ -1,0 +1,105 @@
+.mediwave_logo p {
+  @apply text-base;
+}
+
+.footer_section {
+  @apply w-[100%] bg-secondary relative mt-[0px];
+}
+
+.footer_container {
+  @apply max-w-[1600px] xl:w-[79%] lg:w-[80%] w-[85%] m-auto pt-16;
+}
+
+.head_container {
+  @apply text-primary_BG;
+}
+
+.mediwave_description {
+  @apply lg:grid grid-cols-3 mt-6 block;
+}
+
+.mainsecond_footer {
+  @apply text-primary_BG grid grid-cols-2 max-w-[230px] lg:ml-60 ml-0;
+}
+
+.inner_footer {
+  @apply grid grid-rows-4;
+}
+
+.thirdinner_footer {
+  @apply grid grid-cols-4 min-w-[150px] w-[20%] lg:mt-0 justify-start;
+}
+.follow_conatiner {
+  @apply text-primary_BG mb-3 ml-[6px] font-medium;
+}
+
+.thirdmain_container {
+  @apply lg:mt-[-35px] flex lg:justify-end mt-0 justify-start;
+}
+
+.inner_footer a {
+  @apply mb-7 font-medium;
+}
+
+.final_block {
+  @apply pb-4;
+  margin-top: 40px !important;
+  width: 90%;
+  margin: auto;
+  max-width: 1500px;
+}
+
+.private_container {
+  @apply text-primary_BG text-center;
+}
+
+.private_group_container {
+  @apply flex;
+}
+
+.medi_container {
+  @apply flex w-[100%] justify-center md:mt-7 mt-0;
+}
+
+.group_container {
+  @apply flex justify-end mr-5 fixed bottom-5 right-0;
+  box-shadow: 0px 2px 10px grey;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.footer_bg_block {
+  @apply w-full absolute xl:top-[-72px] lg:top-[-45px] md:top-[-35px] sm:top-[-25px] top-[-18px];
+}
+
+.footer_bg_block svg path {
+  @apply fill-secondary;
+}
+
+@media (max-width: 1456px) {
+  .mainsecond_footer {
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mainsecond_footer {
+    margin-left: 0px;
+  }
+  .description_content {
+    margin-bottom: 30px;
+  }
+  .inner_footer a {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .mainsecond_footer {
+    margin-bottom: 20px;
+  }
+}
+.inner_footer a:hover {
+  @apply font-bold;
+}
