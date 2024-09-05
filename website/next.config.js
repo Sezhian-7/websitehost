@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // basePath: '/temp-staging-url',
+  // basePath: 'https://Sezhian-7.github.io/websitehost/',
+  basePath: '/websitehost',
+  assetPrefix: '/websitehost',
+
   swcMinify: true,
   images: {
     unoptimized: true, // cant use next export otherwise

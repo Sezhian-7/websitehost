@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "export": "next export",
+    "deploy": "npm run build && npm run export && gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "build:export": "next build && next export",
@@ -39,7 +41,9 @@
   "devDependencies": {
     "@types/noisejs": "0.0.28",
     "@types/react-google-recaptcha": "^2.1.5",
+    "@types/react-no-ssr": "^1.1.7",
     "autoprefixer": "^10.4.13",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   }
